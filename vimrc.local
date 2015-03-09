@@ -1,1 +1,6 @@
 colorscheme Tomorrow-Night
+
+nmap <silent> <leader>vimrc :e $MYVIMRC<CR>
+nmap <silent> <leader>vimrclocal :e ~/.vimrc.local<CR>
+nmap <silent> <leader>vimrcbundles :e ~/.vimrc.bundles<CR>
+

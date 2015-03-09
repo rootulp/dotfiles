@@ -54,10 +54,7 @@ Plugin 'stephenmckinney/vim-solarized-powerline'
 Plugin 'ryanss/vim-hackernews'
 Plugin 'scrooloose/nerdtree'
 Plugin 'airblade/vim-gitgutter'
-" Plugin 'chriskempson/tomorrow-theme'
-" Plugin 'flazz/vim-colorschemes'
-
-
+Plugin 'flazz/vim-colorschemes'
 
 if filereadable(expand("~/.vimrc.bundles.local"))
   source ~/.vimrc.bundles.local
