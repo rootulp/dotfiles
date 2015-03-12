@@ -1,6 +1,39 @@
 colorscheme Tomorrow-Night
 
+set laststatus=2 " Always display the statusline in all windows
+set showtabline=2 " Always display the tabline, even if there is only one tab
+set updatetime=1000
+
+" Key Mappings
+nmap J 5j
+nmap K 5k
+nmap H 5h
+nmap L 5l
+
+nnoremap j gj
+nnoremap k gk
+xnoremap j gj
+xnoremap k gk
+
 nmap <silent> <leader>vimrc :e $MYVIMRC<CR>
 nmap <silent> <leader>vimrclocal :e ~/.vimrc.local<CR>
 nmap <silent> <leader>vimrcbundles :e ~/.vimrc.bundles<CR>
 
+nnoremap <Leader>d :GitGutterToggle<CR>
+map <Leader>n :NERDTreeToggle<CR>
+map <Leader>p <C-p>
+
+map <Leader>wh <C-w>h
+map <Leader>wj <C-w>j
+map <Leader>wk <C-w>k
+map <Leader>wl <C-w>l
+map <Leader>ww <C-w>w
+
+let g:gitgutter_sign_added = "++"
+let g:gitgutter_sign_modified = "~~"
+let g:gitgutter_sign_removed = "--"
+
+" let g:airline_powerline_fonts = 1
+" let g:airline_enable_branch = 1
+" let g:airline_enable_syntastic = 1
+" let g:syntastic_ruby_checkers = ['mri', 'rubocop']
