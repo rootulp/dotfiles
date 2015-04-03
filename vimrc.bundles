@@ -59,6 +59,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'bling/vim-airline'
 Plugin 'Lokaltog/vim-easymotion'
+Plugin 'pangloss/vim-javascript'
 
 
 if filereadable(expand("~/.vimrc.bundles.local"))
