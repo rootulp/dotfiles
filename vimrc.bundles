@@ -59,6 +59,7 @@ Plugin 'bling/vim-airline'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'pangloss/vim-javascript'
 Plugin 'tpope/vim-dispatch'
+Plugin 'christoomey/vim-tmux-navigator'
 " Plugin 'Lokaltog/vim-powerline'
 " Plugin 'stephenmckinney/vim-solarized-powerline'
 
