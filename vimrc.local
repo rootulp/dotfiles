@@ -8,10 +8,10 @@ set ttyfast
 set makeprg=ruby\ %
 
 " Key Mappings
-nmap J 5j
-nmap K 5k
-nmap H 5h
-nmap L 5l
+map J 5j
+map K 5k
+map H 5h
+map L 5l
 nmap <silent> gr gT
 
 " Move cursor by display lines
@@ -26,10 +26,10 @@ command VimrcLocal e ~/.vimrc.local
 command VimrcBundles e ~/.vimrc.bundles
 
 " Plugin shortcuts
-nnoremap <Leader>d :GitGutterToggle<CR>
-map <Leader>n :NERDTreeToggle<CR>
+map <Leader>n :NERDTreeTabsToggle<CR>
 map <Leader>p <C-p>
 map <Leader>d :Dispatch
+map <Leader>j :j
 
 " Window nav shortcuts
 map <Leader>w <C-w>w
@@ -45,7 +45,7 @@ let g:gitgutter_sign_removed = "--"
 
 " Nerdtree
 " let g:nerdtree_tabs_open_on_console_startup = 1
-let g:nerdtree_tabs_synchronize_view = 1
+" let g:nerdtree_tabs_synchronize_view = 1
 
 " let g:airline_powerline_fonts = 1
 " let g:airline_enable_branch = 1
