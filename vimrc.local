@@ -3,7 +3,7 @@ colorscheme Tomorrow-Night
 set laststatus=2 " Always display the statusline in all windows
 set showtabline=2 " Always display the tabline, even if there is only one tab
 set updatetime=1000
-" set mouse=a
+set mouse=a
 set ttyfast
 set makeprg=ruby\ %
 
