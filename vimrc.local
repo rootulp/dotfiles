@@ -7,11 +7,13 @@ set mouse=a
 set ttyfast
 set makeprg=ruby\ %
 
-" Key Mappings
+" Hold SHIFT for speed
 map J 5j
 map K 5k
 map H 5h
 map L 5l
+
+" gr to move to previous tab
 nmap <silent> gr gT
 
 " Move cursor by display lines
@@ -29,6 +31,8 @@ command VimrcBundles e ~/.vimrc.bundles
 map <Leader>n :NERDTreeTabsToggle<CR>
 map <Leader>p <C-p>
 map <Leader>d :Dispatch
+
+" Join next line
 map <Leader>j :j
 
 " Window nav shortcuts
@@ -43,11 +47,22 @@ let g:gitgutter_sign_added = "++"
 let g:gitgutter_sign_modified = "~~"
 let g:gitgutter_sign_removed = "--"
 
+" Syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+" let g:syntastic_ruby_checkers = ['mri', 'rubocop']
 " Nerdtree
 " let g:nerdtree_tabs_open_on_console_startup = 1
 " let g:nerdtree_tabs_synchronize_view = 1
 
+" Airline
 " let g:airline_powerline_fonts = 1
 " let g:airline_enable_branch = 1
 " let g:airline_enable_syntastic = 1
-" let g:syntastic_ruby_checkers = ['mri', 'rubocop']
