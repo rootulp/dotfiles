@@ -9,10 +9,10 @@ set makeprg=ruby\ %
 set clipboard=unnamed
 
 " Hold SHIFT for speed
-map J 5j
-map K 5k
-map H 5h
-map L 5l
+" map J 5j
+" map K 5k
+" map H 5h
+" map L 5l
 
 " gr to move to previous tab
 nmap <silent> gr gT
