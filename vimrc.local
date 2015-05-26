@@ -67,3 +67,10 @@ let g:syntastic_check_on_wq = 0
 " let g:airline_powerline_fonts = 1
 " let g:airline_enable_branch = 1
 " let g:airline_enable_syntastic = 1
+
+" Removes trailing spaces
+function! TrimWhiteSpace()
+    %s/\s\+$//e
+endfunction
+
+nnoremap <silent> <Leader>rts :call TrimWhiteSpace()<CR>
