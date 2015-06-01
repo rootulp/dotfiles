@@ -7,6 +7,7 @@ set mouse=a
 set ttyfast
 set makeprg=ruby\ %
 set clipboard=unnamed
+set relativenumber
 
 " Hold SHIFT for speed
 " map J 5j
@@ -34,7 +35,7 @@ map <Leader>p <C-p>
 map <Leader>d :Dispatch
 
 " Join next line
-map <Leader>j :j
+" map <Leader>j :j
 
 " Window nav shortcuts
 map <Leader>w <C-w>w
@@ -74,3 +75,25 @@ function! TrimWhiteSpace()
 endfunction
 
 nnoremap <silent> <Leader>rts :call TrimWhiteSpace()<CR>
+
+function! WrapForTmux(s)
+  if !exists('$TMUX')
+    return a:s
+  endif
+
+  let tmux_start = "\<Esc>Ptmux;"
+  let tmux_end = "\<Esc>\\"
+
+  return tmux_start . substitute(a:s, "\<Esc>", "\<Esc>\<Esc>", 'g') . tmux_end
+endfunction
+
+let &t_SI .= WrapForTmux("\<Esc>[?2004h")
+let &t_EI .= WrapForTmux("\<Esc>[?2004l")
+
+function! XTermPasteBegin()
+  set pastetoggle=<Esc>[201~
+  set paste
+  return ""
+endfunction
+
+inoremap <special> <expr> <Esc>[200~ XTermPasteBegin()
