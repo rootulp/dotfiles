@@ -49,19 +49,19 @@ Plug 'vim-ruby/vim-ruby'
 Plug 'vim-scripts/tComment'
 
 " My additional plugins
-Plugin 'ryanss/vim-hackernews'
 Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'bling/vim-airline'
-Plugin 'Lokaltog/vim-easymotion'
 Plugin 'pangloss/vim-javascript'
 Plugin 'tpope/vim-dispatch'
 Plugin 'christoomey/vim-tmux-navigator'
 " Plugin 'Lokaltog/vim-powerline'
 " Plugin 'stephenmckinney/vim-solarized-powerline'
+" Plugin 'Lokaltog/vim-easymotion'
+" Plugin 'ryanss/vim-hackernews'
 
 if filereadable(expand("~/.vimrc.bundles.local"))
   source ~/.vimrc.bundles.local
