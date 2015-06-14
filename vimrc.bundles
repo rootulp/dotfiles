@@ -49,19 +49,15 @@ Plug 'vim-ruby/vim-ruby'
 Plug 'vim-scripts/tComment'
 
 " My additional plugins
-Plugin 'scrooloose/nerdtree'
-Plugin 'jistr/vim-nerdtree-tabs'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'flazz/vim-colorschemes'
-Plugin 'bling/vim-airline'
-Plugin 'pangloss/vim-javascript'
-Plugin 'tpope/vim-dispatch'
-Plugin 'christoomey/vim-tmux-navigator'
-" Plugin 'Lokaltog/vim-powerline'
-" Plugin 'stephenmckinney/vim-solarized-powerline'
-" Plugin 'Lokaltog/vim-easymotion'
-" Plugin 'ryanss/vim-hackernews'
+Plug 'scrooloose/nerdtree'
+Plug 'jistr/vim-nerdtree-tabs'
+Plug 'scrooloose/nerdcommenter'
+Plug 'airblade/vim-gitgutter'
+Plug 'flazz/vim-colorschemes'
+Plug 'bling/vim-airline'
+Plug 'pangloss/vim-javascript'
+Plug 'tpope/vim-dispatch'
+Plug 'christoomey/vim-tmux-navigator'
 
 if filereadable(expand("~/.vimrc.bundles.local"))
   source ~/.vimrc.bundles.local
