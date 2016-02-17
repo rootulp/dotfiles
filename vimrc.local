@@ -9,12 +9,6 @@ set makeprg=ruby\ %
 set clipboard=unnamed
 set relativenumber
 
-" Hold SHIFT for speed
-" map J 5j
-" map K 5k
-" map H 5h
-" map L 5l
-
 " gr to move to previous tab
 nmap <silent> gr gT
 
@@ -34,15 +28,8 @@ map <Leader>n :NERDTreeTabsToggle<CR>
 map <Leader>p <C-p>
 map <Leader>d :Dispatch
 
-" Join next line
-" map <Leader>j :j
-
 " Window nav shortcuts
 map <Leader>w <C-w>w
-" map <Leader>wh <C-w>h
-" map <Leader>wj <C-w>j
-" map <Leader>wk <C-w>k
-" map <Leader>wl <C-w>l
 
 " GitGutter
 let g:gitgutter_sign_added = "++"
@@ -59,7 +46,7 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
-" let g:syntastic_ruby_checkers = ['mri', 'rubocop']
+let g:syntastic_ruby_checkers = ['mri', 'rubocop']
 " Nerdtree
 " let g:nerdtree_tabs_open_on_console_startup = 1
 " let g:nerdtree_tabs_synchronize_view = 1
@@ -67,7 +54,7 @@ let g:syntastic_check_on_wq = 0
 " Airline
 let g:airline_powerline_fonts = 1
 let g:airline_detect_paste=1
-let g:airline#extensions#tabline#enabled = 1
+" let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#branch#enabled = 1
 let g:airline#extensions#syntastic#enabled = 1
 let g:airline#extensions#hunks#enabled = 1
