@@ -18,11 +18,6 @@ nnoremap k gk
 xnoremap j gj
 xnoremap k gk
 
-" Commands to quickly open up vim config files
-command Vimrc e $MYVIMRC
-command VimrcLocal e ~/.vimrc.local
-command VimrcBundles e ~/.vimrc.bundles
-
 " Plugin shortcuts
 map <Leader>n :NERDTreeTabsToggle<CR>
 map <Leader>p <C-p>
