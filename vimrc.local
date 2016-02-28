@@ -1,11 +1,9 @@
 colorscheme Tomorrow-Night
 
-set laststatus=2 " Always display the statusline in all windows
 set showtabline=2 " Always display the tabline, even if there is only one tab
 set updatetime=1000
 set mouse=a
 set ttyfast
-set makeprg=ruby\ %
 set clipboard=unnamed
 set relativenumber
 
@@ -19,12 +17,14 @@ xnoremap j gj
 xnoremap k gk
 
 " Plugin shortcuts
-map <Leader>n :NERDTreeTabsToggle<CR>
-map <Leader>p <C-p>
-map <Leader>d :Dispatch
+" map <Leader>n :NERDTreeTabsToggle<CR>
+" map <Leader>p <C-p>
+" map <Leader>d :Dispatch
 
 " Window nav shortcuts
 map <Leader>w <C-w>w
+
+" Plugins
 
 " GitGutter
 let g:gitgutter_sign_added = "++"
@@ -42,6 +42,7 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
 let g:syntastic_ruby_checkers = ['mri', 'rubocop']
+
 " Nerdtree
 " let g:nerdtree_tabs_open_on_console_startup = 1
 " let g:nerdtree_tabs_synchronize_view = 1
