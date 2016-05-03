@@ -14,8 +14,8 @@
   st = status
 [core]
   excludesfile = ~/.gitignore
-	autocrlf = false
-	safecrlf = true
+  autocrlf = false
+  safecrlf = true
 [merge]
   ff = only
 [commit]
@@ -27,7 +27,7 @@
 [include]
   path = ~/.gitconfig.local
 [user]
-	name = Rootul Patel
-	email = rootulp@gmail.com
+  name = Rootul Patel
+  email = rootulp@gmail.com
 [credential]
-	helper = osxkeychain
+  helper = osxkeychain
