@@ -1,0 +1,9 @@
+" My additional plugins
+Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdcommenter'
+Plug 'airblade/vim-gitgutter'
+Plug 'flazz/vim-colorschemes'
+Plug 'bling/vim-airline'
+Plug 'pangloss/vim-javascript'
+Plug 'tpope/vim-dispatch'
+Plug 'christoomey/vim-tmux-navigator'
