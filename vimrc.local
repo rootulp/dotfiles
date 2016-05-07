@@ -6,6 +6,8 @@ set mouse=a
 set ttyfast
 set clipboard=unnamed
 set relativenumber
+set wildmenu
+set wildmode=full
 
 " gr to move to previous tab
 nmap <silent> gr gT
