@@ -12,3 +12,6 @@ alias tr='~/.bin/tmux-resurrect-auto-rename'
 alias ta='tmux attach -t'
 alias ts='tmux new-session -s'
 alias tl='tmux list-sessions'
+
+# Misc
+alias c='clear'
