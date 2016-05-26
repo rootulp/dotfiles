@@ -14,4 +14,4 @@ alias ts='tmux new-session -s'
 alias tl='tmux list-sessions'
 
 # Misc
-alias c='clear'
+alias k='clear'
