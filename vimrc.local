@@ -1,16 +1,29 @@
-let base16colorspace=256  " Access colors present in 256 colorspace
-set background=dark
-colorscheme base16-tomorrow
-
-set showtabline=2 " Always display the tabline, even if there is only one tab
-set updatetime=1000
-set mouse=a
+" Increase vim's speed
 set ttyfast
+
+" Enable the mouse
+set mouse=a
+
+" Enable the system clipboard
 set clipboard=unnamed
+
+" relative line numbers and reduce width of number column
 set relativenumber
 set numberwidth=3
+
+" Always display the tabline, even if there is only one tab
+set showtabline=2
+
+" Tab autocomplete
 set wildmenu
 set wildmode=full
+
+" From base16 - Access colors present in 256 colorspace
+let base16colorspace=256
+
+" Color Scheme
+set background=dark
+colorscheme base16-tomorrow
 
 " gr to move to previous tab
 nmap <silent> gr gT
