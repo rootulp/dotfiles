@@ -44,6 +44,10 @@ bind - split-window -v
 unbind r
 bind r source-file ~/.tmux.conf \; display "Reloaded!"
 
+# unbind n and p
+unbind n
+unbind p
+
 # Status Bar
 
 # enable UTF-8 support in status bar
