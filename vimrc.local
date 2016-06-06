@@ -59,6 +59,10 @@ let g:airline#extensions#hunks#enabled = 1
 let g:airline#extensions#hunks#non_zero_only = 0
 let g:airline#extensions#hunks#hunk_symbols = ['+', '~', '-']
 
+" Gitgutter
+let g:gitgutter_realtime = 0
+let g:gitgutter_eager = 0
+
 " Removes trailing spaces
 function! TrimWhiteSpace()
     %s/\s\+$//e
