@@ -8,6 +8,7 @@ set mouse=a
 set ttyfast
 set clipboard=unnamed
 set relativenumber
+set numberwidth=3
 set wildmenu
 set wildmode=full
 
