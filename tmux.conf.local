@@ -28,7 +28,7 @@ setw -g alternate-screen on
 set -g escape-time 1
 
 # increase repeat time for repeatable commands
-set -g repeat-time 1000
+set -g repeat-time 100
 
 # Reorder tmux windows with Shift + Left and Shift + Right
 bind-key -n S-Left swap-window -t -1
@@ -43,10 +43,6 @@ bind - split-window -v
 # force a reload of the config file
 unbind r
 bind r source-file ~/.tmux.conf \; display "Reloaded!"
-
-# unbind n and p
-unbind n
-unbind p
 
 # Status Bar
 
