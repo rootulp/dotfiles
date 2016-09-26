@@ -1,7 +1,7 @@
 export PATH="$HOME/.bin:$PATH"
 eval "$(rbenv init - --no-rehash zsh)"
 
-export PS1='%{$fg_bold[yellow]%}${PWD/#$HOME/~}%{$reset_color%}$(git_prompt_info) %># '
+export PS1='%{$fg[yellow]%}${PWD/#$HOME/~}%{$reset_color%}$(git_prompt_info) %># '
 
 # Load Exercism completion
 if [ -f ~/.config/exercism/exercism_completion.zsh ]; then
