@@ -14,7 +14,7 @@
   st = status
 [core]
   excludesfile = ~/.gitignore
-  autocrlf = false
+  autocrlf = input
 [merge]
   ff = only
 [commit]
